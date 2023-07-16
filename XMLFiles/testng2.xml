@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite"  parallel="tests">
+
+<!-- code for run test on Chrome browser-->
+<test thread-count="5" name="ChromeTest">
+<parameter name="browser" value="Chrome"/>
+ <classes>
+      <class name="com.learnautomation.testcases.FirstPageTestCases"/>
+       <class name="com.learnautomation.testcases.SecondPageTestCases"/>
+    </classes>
+</test>
+
+<!-- code for run test on IE browser-->
+<test thread-count="5" name="IETest">
+<parameter name="browser" value="IE"/>
+ <classes>
+      <class name="com.learnautomation.testcases.FirstPageTestCases"/>
+       <class name="com.learnautomation.testcases.SecondPageTestCases"/>
+    </classes>
+</test>
+
+</suite> <!-- Suite -->
